@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* ここから下は任意：全体の雰囲気を少し整える */
+html, body {
+  height: 100%;
+}
