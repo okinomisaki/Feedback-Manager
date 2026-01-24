@@ -35,13 +35,32 @@ const DEFAULT_REQUIRED_CHECKS: CheckItem[] = [
     id: "test-pass",
     label: "テストはすべてパスしている",
     errorText:
-      "テストが通っていない部分があるようです。エラーメッセージを確認して、修正をお願いします。",
+      "テストが通っていません。エラーメッセージを確認して修正してみてください！",
   },
   {
-    id: "requirements-met",
-    label: "要件（例：5ファイル）を満たしている",
+    id: "requirements-markdown",
+    label: "README が Markdown 記法で正しく記述されている",
     errorText:
-      "要件を満たしていない箇所があるようです。課題の指示を再度確認してみてください。",
+      "Markdown が使われていませんでした。Markdown 記法を使って README を書いてみてください。",
+  },
+  {
+    id: "commit-message-quality",
+    label: "コミットメッセージが適切に書かれている",
+    errorText:
+      "コミットメッセージが変更内容と一致していませんでした。『何を変更したか』が履歴から分かるように、変更内容ごとにメッセージを分けてみてください。",
+  },
+  {
+    id: "initial-commit-is-copied-template",
+    label: "コミットのタイミングが適切で、変更の流れが追える",
+    errorText:
+      "最初のコミット時点ですでに完成形になっていました。本課題では『教材コピー → その後に修正 → 変更ごとにコミット』の流れを重視しています。",
+  },
+  {
+    id: "commit-only-required-files",
+    label:
+      "「指定の5ファイルにコードが揃っている」「不要ファイルが混ざっていない」",
+    errorText:
+      "指定の5ファイル（README/.gitignore/index/script/test）のみをコミットして下さい。",
   },
 ];
 
